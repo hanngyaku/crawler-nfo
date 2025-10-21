@@ -1,0 +1,67 @@
+[
+    {
+        "domain": ".hanime1.me",
+        "expirationDate": 1761044577.752723,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "XSRF-TOKEN",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "eyJpdiI6ImxYaDJxRkhPVHBKZGF0dlpYMjRtNGc9PSIsInZhbHVlIjoiVGZvSGZ1TDdXT2ExcUE2Z1Q0XC9PSFFsUG5yYjFLRFBhajBaS2xRUnpMQXVKRCtYUUJTWmdIbjRhdExLdnVWdmkiLCJtYWMiOiI2NGNmZWEyODE2NGYzZDliMjk0ZGViNjYyYTZhNDIzYTE4YTM1MTlhN2VhY2FlMGMyYTcxZTY2NDVkMzU0YjFmIn0%3D"
+    },
+    {
+        "domain": ".hanime1.me",
+        "expirationDate": 1761123785,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "_gid",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "GA1.2.580571888.1761026262"
+    },
+    {
+        "domain": ".hanime1.me",
+        "expirationDate": 1795597385.471495,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "_ga",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "GA1.2.1968158259.1755662011"
+    },
+    {
+        "domain": ".hanime1.me",
+        "expirationDate": 1795597384.802155,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "_ga_2JNTSFQYRQ",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "GS2.1.s1761037384$o4$g0$t1761037384$j60$l0$h0"
+    },
+    {
+        "domain": ".hanime1.me",
+        "expirationDate": 1761044577.752983,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "hanime1_session",
+        "path": "/",
+        "sameSite": null,
+        "secure": false,
+        "session": false,
+        "storeId": null,
+        "value": "eyJpdiI6IkZKbkZUUXdaczlcL0w4YnJyWk1VOGxnPT0iLCJ2YWx1ZSI6IkJDUENoMFo2eUhyMll4OFc5elRUNGVzTmhWZXJ4R21hUDFoV2I3cVFocFZpMUZodCtoMGFvemxPekxwaUdqWk0iLCJtYWMiOiIxN2MwYjMxNWZmZjI2NjFkM2JjZTgzOGE4NjAxNzc2MGZjNTk0NTBkODcwN2ZiYjFiODBjZGE4MTkwNDU0MWJlIn0%3D"
+    }
+]

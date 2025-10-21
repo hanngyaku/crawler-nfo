@@ -1,0 +1,152 @@
+[
+  {
+    "name": "_session_id",
+    "value": "400b9b7a5c382bfda44ac0f4b75b4439c2050f4c16e23bf21296a674338e05eb",
+    "domain": "fantia.jp",
+    "path": "/",
+    "expires": 1763621275,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "AMP_MKTG_b991fc5cce",
+    "value": "JTdCJTdE",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1792563411,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_f_v_k_1",
+    "value": "e9b859620cb5c51124d6dbbd60c8e873e8500ee7ffb6b01530550d77bb5a242c",
+    "domain": "fantia.jp",
+    "path": "/",
+    "expires": 1792565275,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.1.502710268.1735636769",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1795588638,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_06JRCC6EVG",
+    "value": "GS1.2.1739268873.1.0.1739268873.0.0.0",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1773828873,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_5D88MN5EKL",
+    "value": "GS2.1.s1761027410$o6$g1$t1761028638$j59$l0$h0",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1795588638,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_6JT3ZJT5JM",
+    "value": "GS1.1.1739268913.1.0.1739268923.50.0.0",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1773828923,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_FVSMH3KV9Z",
+    "value": "GS2.2.s1761027412$o6$g1$t1761028643$j60$l0$h0",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1795588643,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_QPDT2TX73T",
+    "value": "GS1.1.1739268873.1.0.1739268880.0.0.0",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1773828880,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_T4R303KRXF",
+    "value": "GS2.1.s1758867628$o1$g0$t1758869238$j60$l0$h0",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1793429238,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_gid",
+    "value": "GA1.2.528264322.1761027412",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1761115038,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_im_uid.3929",
+    "value": "b.9ff0b38992a4fe86",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1766643290,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  },
+  {
+    "name": "_im_vid",
+    "value": "01JKT82NEKEKPRQR4ZNZCKRN7N",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1795587417,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "AMP_b991fc5cce",
+    "value": "JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI4MTQwNzljNy01NDU4LTRhMDQtOWYzYS03MWI3YTVlZDVlNzclMjIlMkMlMjJ1c2VySWQlMjIlM0ExMzQ5Nzg5MyUyQyUyMnNlc3Npb25JZCUyMiUzQTE3NjEwMjc0MTE3ODclMkMlMjJvcHRPdXQlMjIlM0FmYWxzZSUyQyUyMmxhc3RFdmVudFRpbWUlMjIlM0ExNzYxMDI4NjM4ODM5JTJDJTIybGFzdEV2ZW50SWQlMjIlM0ExNzElMkMlMjJwYWdlQ291bnRlciUyMiUzQTMlN0Q=",
+    "domain": ".fantia.jp",
+    "path": "/",
+    "expires": 1792564638,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "jp_chatplus_vtoken",
+    "value": "vnxdhkmnzqtfjiface3sab404376",
+    "domain": "fantia.jp",
+    "path": "/",
+    "expires": 1770196767,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "None"
+  }
+]

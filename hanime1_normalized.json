@@ -1,0 +1,52 @@
+[
+  {
+    "name": "XSRF-TOKEN",
+    "value": "eyJpdiI6ImxYaDJxRkhPVHBKZGF0dlpYMjRtNGc9PSIsInZhbHVlIjoiVGZvSGZ1TDdXT2ExcUE2Z1Q0XC9PSFFsUG5yYjFLRFBhajBaS2xRUnpMQXVKRCtYUUJTWmdIbjRhdExLdnVWdmkiLCJtYWMiOiI2NGNmZWEyODE2NGYzZDliMjk0ZGViNjYyYTZhNDIzYTE4YTM1MTlhN2VhY2FlMGMyYTcxZTY2NDVkMzU0YjFmIn0%3D",
+    "domain": ".hanime1.me",
+    "path": "/",
+    "expires": 1761044577,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_gid",
+    "value": "GA1.2.580571888.1761026262",
+    "domain": ".hanime1.me",
+    "path": "/",
+    "expires": 1761123785,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.2.1968158259.1755662011",
+    "domain": ".hanime1.me",
+    "path": "/",
+    "expires": 1795597385,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_2JNTSFQYRQ",
+    "value": "GS2.1.s1761037384$o4$g0$t1761037384$j60$l0$h0",
+    "domain": ".hanime1.me",
+    "path": "/",
+    "expires": 1795597384,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "hanime1_session",
+    "value": "eyJpdiI6IkZKbkZUUXdaczlcL0w4YnJyWk1VOGxnPT0iLCJ2YWx1ZSI6IkJDUENoMFo2eUhyMll4OFc5elRUNGVzTmhWZXJ4R21hUDFoV2I3cVFocFZpMUZodCtoMGFvemxPekxwaUdqWk0iLCJtYWMiOiIxN2MwYjMxNWZmZjI2NjFkM2JjZTgzOGE4NjAxNzc2MGZjNTk0NTBkODcwN2ZiYjFiODBjZGE4MTkwNDU0MWJlIn0%3D",
+    "domain": ".hanime1.me",
+    "path": "/",
+    "expires": 1761044577,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  }
+]
