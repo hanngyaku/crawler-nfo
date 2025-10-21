@@ -1,5 +1,5 @@
 import fs from "fs";
-import  FunctionTools  from "./functions.js";
+import  FunctionTools  from "../tools/functions.js";
 function MoveTest() {
     var txtName = 'D:\\桌面文件夹\\修仙\\新建 文本文档.txt';
     var newtxtName = 'D:\\桌面文件夹\\修仙\\2.txt';

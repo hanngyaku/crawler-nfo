@@ -1,4 +1,4 @@
-import  FunctionTools from './functions.js';
+import  FunctionTools from '../tools/functions.js';
 import { format } from 'date-fns/format';
 const nfo = {
     plot: '作品简介内容...',

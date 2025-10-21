@@ -1,5 +1,5 @@
 import { PlaywrightCrawler, ProxyConfiguration } from 'crawlee';
-import FunctionTools from './functions.js';
+import FunctionTools from './tools/functions.js';
 import fs from 'fs';
 
 const COOKIE_FILE = 'hanime1.json';
