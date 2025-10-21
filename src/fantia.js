@@ -3,8 +3,8 @@ import FunctionTools from './tools/functions.js';
 import { format } from 'date-fns/format';
 import fs from 'fs';
 
-const COOKIE_FILE = 'fantia.json';
-const NORMALIZED_COOKIE_FILE = "fantia_normalized.json";
+const COOKIE_FILE = './fantia.json';
+const NORMALIZED_COOKIE_FILE = "./fantia_normalized.json";
 const cookies = FunctionTools.loadAndNormalize(COOKIE_FILE, NORMALIZED_COOKIE_FILE);
 
 const crawler = new PlaywrightCrawler({

@@ -48,7 +48,7 @@ var FunctionTools = {
     loadAndNormalize: function (rawPath, outPath) {
         if (!fs.existsSync(rawPath)) throw new Error(`Cannot find ${rawPath}`);
         const raw = JSON.parse(fs.readFileSync(rawPath, 'utf8'));
-        const normalized = raw.map(normalizeCookie);
+        const normalized = raw.map(FunctionTools.normalizeCookie);
         fs.writeFileSync(outPath, JSON.stringify(normalized, null, 2));
         return normalized;
     },
