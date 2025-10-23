@@ -186,6 +186,10 @@ var FunctionTools = {
             return match[1]; // 返回匹配到的数字字符串
         }
         return null; // 如果没有找到数字，返回null
+    },
+    moveFile: function (originPath, desPath) {
+        fs.renameSync(originPath, desPath);
+        console.log(`移动文件: ${originPath} -> ${desPath}`);
     }
 }
 // module.exports = FunctionTools

@@ -7,5 +7,5 @@ export default {
         plot:".wysiwyg.mb-30",
         uploadtime:".post-meta.d-flex.align-items-center.justify-content-between span",        
     },
-    "selectorTimeout" : 10000,
+    "selectorTimeout" : 15000,
 }

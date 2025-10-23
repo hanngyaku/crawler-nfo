@@ -1,6 +1,7 @@
-// import { program } from "commander";
-const { program } = require('commander');
-const  Crawler = require('./fantia.js');
+import { program } from "commander";
+import Crawler from "./fantia.js";
+// const { program } = require('commander');
+//const  Crawler = require('./fantia.js');
 program
     .option('-m, --mode <string>', '运行模式', 'fantia')
     .option('-p, --path <string>', '目标url', )

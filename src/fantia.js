@@ -4,6 +4,7 @@ import { format } from 'date-fns/format';
 import fs from 'fs';
 import path from 'path';
 import configFantia from './config/fantia.js'
+import configCrawler from './config/crawler.js'
 
 var config = {
     'savePath': "", // 保存路径
@@ -31,7 +32,9 @@ function MoveFile(id, exts, savePath, findPath) {
 const crawler = new PlaywrightCrawler({
     async requestHandler({ page, request, log }) {
         log.info(`访问中: ${request.url}`);
-
+        // console.log("request.userData", request.userData);
+        const originPath = request.userData.file;
+        const id = request.userData.id;
         // 创作者页面标题
         
         const title = await page.title();
@@ -79,35 +82,24 @@ const crawler = new PlaywrightCrawler({
             releasedate: dateStr,
             genre: tags,
             studio: studios[0]
-        }
-        // 提取id
-        const url = request.url;
-        const match = url.match(/posts\/(\d+)/);
-        console.log('URL:', url);
-        var postId = "";
-        if (match) {
-            postId = match[1];
-            console.log('Post ID:', postId);
-        } else {
-            console.log('No post ID found in', url);
-            return;
         }        
         // 保存数据
-        var savePath = `${config.savePath}/${postId}/${postId}.nfo`;   
+        var savePath = `${config.savePath}/${id}/${id}.nfo`;   
         const dir = path.dirname(savePath);
         if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
         }
         FunctionTools.SaveNfo(savePath, nfo);
         var ext = path.extname(thumbnails[0]);
-        await FunctionTools.DownloadImage(thumbnails[0], `${config.savePath}/${postId}/${postId}${ext}`);
+        await FunctionTools.DownloadImage(thumbnails[0], `${config.savePath}/${id}/${id}${ext}`);
         // 移动视频到指定目录
-        MoveFile(postId, config.exts, `${config.savePath}/${postId}`, config.findPath);
+        FunctionTools.moveFile(originPath, `${config.savePath}/${id}/${id}${path.extname(originPath)}`);        
     },
 
     preNavigationHooks: [
         async ({ page, request, log }, gotoOptions) => {
-            // 👇 修改等待事件为 'domcontentloaded'，比默认的 'load' 快很多
+            // 👇 修改等待事件为 'domcontentloaded'，比默认的 'load' 快很多            
+            // gotoOptions.waitUntil = 'domcontentloaded';
             gotoOptions.waitUntil = 'commit';
 
             // 注入 cookie
@@ -117,18 +109,17 @@ const crawler = new PlaywrightCrawler({
                 log.info('已载入登录 cookie');
             }
         },
-    ],
-    
-    // headless: false,
-    // maxConcurrency: 1,  // 最大并发数
-    // minConcurrency: 3,  // 最小并发数
-    // maxRequestRetries: 3,  // 最大重试次数
-    // maxRequestsPerMinute: 30,  // 每分钟最大请求数
+    ],        
     // keepAlive: true,  // 保持连接
     // launchContext: {
     //     useIncognitoPages: false, // ！不要每次新建隐身页面
     // },
     // persistCookiesPerSession: true, // 在 session 内保持 cookie
+    headless : configCrawler.headless,
+    maxConcurrency : configCrawler.maxConcurrency,  // 最大并发数
+    minConcurrency : configCrawler.minConcurrency,  // 最小并发数
+    maxRequestRetries : configCrawler.maxRequestRetries,  // 最大重试次数
+    maxRequestsPerMinute : configCrawler.maxRequestsPerMinute,  // 每分钟最大请求数
 });
 
 // 启动爬虫
@@ -147,15 +138,23 @@ async function Crawler() {
     files.forEach(file => {
         const numbers = FunctionTools.extractNumbersFromFilename(file);
         if(numbers) {
-            urls.push(`https://fantia.jp/posts/${numbers}`);
+            urls.push({
+                url: `https://fantia.jp/posts/${numbers}`,
+                userData: { 
+                    file: file,
+                    id: numbers,
+                 }
+            });
         }        
     });
     // console.log(urls);
+    // urls.push("https://fantia.jp/posts/3072923")
     config.savePath = saveDir;
     config.exts = suffix;
     config.findPath = dir;
     // 启动爬虫
     await crawler.run(urls);
     console.log(`共耗时: ${new Date() - time}ms`);
+    await crawler.teardown(); // ✅ 关闭浏览器、释放资源    
 }
 Crawler();
