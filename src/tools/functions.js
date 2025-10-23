@@ -2,6 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import axios from 'axios';
 
+// const fs = require('fs');
+// const path = require('path');
+// const axios = require('axios');
+
 var FunctionTools = {
     normalizeCookie: function (c) {
         // sameSite normalization
@@ -164,7 +168,7 @@ var FunctionTools = {
 
             if (stat && stat.isDirectory()) {
                 // 如果是目录，递归查找
-                results = results.concat(this.findFilesBySuffix(file, suffix));                
+                results = results.concat(this.findFilesBySuffix(file, suffix));
             } else {
                 // 如果是文件，检查后缀
                 if (suffix.includes(path.extname(file))) {
@@ -173,7 +177,17 @@ var FunctionTools = {
             }
         })
         return results;
+    },
+    extractNumbersFromFilename: function (filename) {
+        // 匹配文件名中的数字部分，不包括扩展名
+        // 假设数字位于文件名末尾，扩展名之前
+        const match = filename.match(/(\d+)\.[a-zA-Z0-9]+$/);
+        if (match && match[1]) {
+            return match[1]; // 返回匹配到的数字字符串
+        }
+        return null; // 如果没有找到数字，返回null
     }
 }
+// module.exports = FunctionTools
+
 export default FunctionTools;
-//export { FunctionTools };
